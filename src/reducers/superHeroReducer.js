@@ -4,7 +4,6 @@ import { RECEIVE_SUPERHEROES, SET_SELECT_SUPERHERO, RESET_STORE } from '../actio
 
 const superHeroReducer = (state = [], action) => {
     switch (action.type) {
-        
         case RECEIVE_SUPERHEROES:
             return {
                 ...state,

@@ -19,11 +19,10 @@ function getCharacters(origOptions = {}) {
 
     let params = `apikey=${config.publicKey}&ts=${timeStamp}&hash=${hash}&limit=${options.count}&offset=${currentOffset}`
 
-	//const url = `${config.baseUrl}${URI}${params}`
+	//params Test API
+	params = `apikey=${config.publicKeyTest}&ts=${config.timeStampTest}&hash=${config.hashTest}&limit=${options.count}&offset=${currentOffset}`
 	
-	const url = `${config.baseUrl}${URI}` +
-	`ts=1&limit=${options.count}&&offset=${currentOffset}`+
-	'&apikey=d331da6eb1dccfc20c013db05af8fc8d&hash=7afe95c07a3405af0b83ee17e8439eda';
+	const url = `${config.baseUrl}${URI}${params}`
 
     return fetch(url).then(response => response.json());
   }

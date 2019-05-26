@@ -22,27 +22,33 @@ class SuperHero extends Component {
 							</div>
 							<div className="col-md-6 bioDescription">
 								<p className="">{this.current.description}</p>
-									<ul className="bioDetails-urls">
-										{
-											this.current.urls && this.current.urls.length > 0 &&	
-												this.current.urls.map(item => {
-													return(
-														<li 
-															key={item.type}
-															className=""
-														>
-														<a href={ item.url } target="_blank" title={ item.url }>
-														{ item.url }
-														</a>
-														</li>
-													);
-												})
-										}
-									</ul>
+								<ul className="bioDetails-urls">
+									{
+										this.current.urls && this.current.urls.length > 0 &&	
+											this.current.urls.map(item => {
+												return(
+													<li 
+														key={item.type}
+														className=""
+													>
+													<a href={ item.url } target="_blank" rel="noopener noreferrer" title={ item.url }>
+													{ item.url }
+													</a>
+													</li>
+												);
+											})
+									}
+								</ul>
+								<ul className="list-item-references">
+									{this.current.comics.available > 0 && <li><span className="list-item-circ list-item-comics"></span> Appear in {this.current.comics.available} comics</li>}
+									{this.current.series.available > 0 && <li><span className="list-item-circ list-item-series"></span> Appear in {this.current.series.available} series</li>}
+									{this.current.events.available > 0 && <li><span className="list-item-circ list-item-events"></span> Appear in {this.current.events.available} events</li>}
+									{this.current.stories.available > 0 && <li><span className="list-item-circ list-item-stories"></span> Appear in {this.current.stories.available} stories</li>}
+								</ul>	
 							</div>
 						</div>
 						:
-						<h4>select a superhero from the list...</h4>
+						<h4>Select a Superhero...</h4>
 				}
 			</div>
 		);
