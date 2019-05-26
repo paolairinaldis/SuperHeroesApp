@@ -1,0 +1,157 @@
+body{
+	background: radial-gradient(#22262a, #00181F);
+	background-size: 100%;
+	background-repeat: none;
+}
+.App{
+	text-align: center;
+	padding: 2%;
+}
+.app-title{
+	margin: auto;
+	width: 60%;
+	border: none;
+	margin-bottom: 50px;
+	font-size: 4rem;
+}
+.alphabetLinks{
+	display: inline-block;
+	cursor: pointer;
+}
+.letter{
+	display: inline-block;
+	margin-top: 4px;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	border-color: #adadad;
+	width: 40px;
+	color: #00181F;
+	font-size: 1.2em;
+	font-style: bold;
+}
+.letter:hover{
+	color: #BDC4C7;
+}
+.portrait{
+	background-color: #00181F;
+	height: 100%;
+	vertical-align: middle;
+	margin: auto auto;
+	position: relative;
+}
+.item-img {
+	max-width: 90%;
+	max-height: 95%;
+	height: auto;
+	width: auto;
+	position: absolute;
+	top: 50%;
+
+	transform: translate(-50%, -50%);
+}
+.characterwrapper{
+	height:500px;
+}
+.biowrapper{
+	height: 90%;
+	width: 90%;
+	
+}
+.scroll-characters {
+	overflow:auto;
+	height: 350px;
+	color: black;
+	border: none;
+}
+.biography{
+	overflow: auto;
+	color: black;
+	font-size: 1em;
+	height: 535px;
+}
+.alpha-search {
+	width: 60%;
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: none;
+}
+h1{
+	color:white;
+}
+h3{
+	color: white;
+	border-radius: 5px;
+	background-color: #FF0000;
+	padding-bottom: 8px;
+	font-size: 3rem;
+}
+.favBadge{
+	float: right;
+	cursor: pointer;
+}
+.bioDetails{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	height: 250px;	
+}
+.bioDetails-urls{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+.bioDetails-urls li{ 
+	padding-bottom: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mynavs{
+	cursor: pointer;
+	color: #00181F;
+}
+.bioDescription{
+	text-align: left;
+	font-size: 1.25rem;
+}
+.list-group-item{
+	font-size: 1.5rem;
+	text-align: left;
+	font-weight: bold;
+}
+.list-item-img{
+	width: 15%;
+	height: 15%;
+	margin-right: 15px;
+}
+.list-item-name{
+	width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+.list-item-refs{ text-align: right; padding: 0px; margin: 0px;}
+.list-item-circ{
+	border-radius: 50%;
+	margin-left: 5px;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
+.list-item-comics{ background-color: #44b469 ;}
+.list-item-series{ background-color: #448fb4;}
+.list-item-events{ background-color: #B44457;}
+.list-item-stories{ background-color: #311c96;}
+
+.list-item-references{
+	list-style: none;
+	padding: 20px 0px 0px;
+	margin: 0px;
+	text-align: left;
+	font-size: 1.2rem;
+}
+
+.list-item-references li{ padding-bottom: 5px;}
